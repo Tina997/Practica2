@@ -27,13 +27,6 @@
   margin-inline-start: 15px;
   padding: 5px 15px 5px 15px;
 }
-.btn-login{
-  background-color: var(--lightpink);
-}
-
-.btn-signin{
-  background-color: var(--peachpuff);
-}
 
 .btn-start{
   background-color: var(--blush);
@@ -42,4 +35,8 @@
 .footer{
   background-color: var(--darksienna);
   color: var(--peachpuff);
+  width: 100%;
+}
+.carrousel-inner img{
+  height:70%;
 }
