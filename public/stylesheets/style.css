@@ -38,3 +38,8 @@
 .btn-start{
   background-color: var(--blush);
 }
+
+.footer{
+  background-color: var(--darksienna);
+  color: var(--peachpuff);
+}
