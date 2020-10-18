@@ -1,8 +1,40 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);
+
+/*=============== IMPORT ICONS ===============*/
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+
+/*===============COLORS====================*/
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+
+  --darksienna: #450920;
+  --marronX11: #A53860;
+  --blush: #DA627D;
+  --lightpink: #FFA5AB;
+  --peachpuff: #F9DBBD;
+}
+/* ===============NAVBAR=============== */
+.navbar{
+  background-color: var(--darksienna);
+}
+.btns{
+  margin-inline-start: 10%;
 }
 
-a {
-  color: #00B7FF;
+.btn{
+  color: var(--black);
+  margin-inline-start: 15px;
+  padding: 5px 15px 5px 15px;
+}
+.btn-login{
+  background-color: var(--lightpink);
+}
+
+.btn-signin{
+  background-color: var(--peachpuff);
+}
+
+.btn-start{
+  background-color: var(--blush);
 }
