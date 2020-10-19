@@ -13,6 +13,12 @@
   --blush: #DA627D;
   --lightpink: #FFA5AB;
   --peachpuff: #F9DBBD;
+  --teagreen: #CCF5CC;
+  --aeroblue: #CCF5E2;
+  --honeydew: #E9F4E2;
+  --papayawhip: #F5E9CC;
+  --beaublue: #CCE1F5;
+  --languidlavender: #E2D9E8
 }
 /* ===============NAVBAR=============== */
 .navbar{
@@ -23,13 +29,10 @@
 }
 
 .btn{
-  color: var(--black);
+  background-color: var(--darksienna);
+  color: var(--white);
   margin-inline-start: 15px;
   padding: 5px 15px 5px 15px;
-}
-
-.btn-start{
-  background-color: var(--blush);
 }
 
 .footer{
@@ -39,4 +42,26 @@
 }
 .carrousel-inner img{
   height:70%;
+}
+.card-columns{
+  margin: 5%;
+}
+
+.card1{
+  background-color: var(--teagreen);
+}
+.card2{
+  background-color: var(--languidlavender);
+}
+.card3{
+  background-color: var(--papayawhip);
+}
+.card4{
+  background-color: var(--honeydew);
+}
+.card5{
+  background-color: var(--aeroblue);
+}
+.card6{
+  background-color: var(--beaublue);
 }
