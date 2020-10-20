@@ -25,15 +25,15 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Identificador</th>
                         <th>Valor</th>
+                        <th>Identificador</th>
                     </tr>
                 </thead>
                 <tbody>
                     <% results.forEach(function(r){ %>
                     <tr>
-                        <td><%= r.id %></td>
-                        <td><%=r.valor%></td>
+                        <td><%= r.valor %></td>
+                        <td><%=r.id%></td>
                     </tr>
                     <%});%>
                 </tbody>
