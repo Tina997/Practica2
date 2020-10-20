@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+//Indicar la ruta a la que llama la variable
 var serviciosRouter = require('./routes/servicios');
 
 var app = express();
@@ -22,8 +22,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/servicios', serviciosRouter);
 app.use('/users', usersRouter);
+//Indicar que /servicios va a la ruta indicada 
+app.use('/servicios', serviciosRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
