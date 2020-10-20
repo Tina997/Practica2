@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 //Indicar la ruta a la que llama la variable
 var serviciosRouter = require('./routes/servicios');
+var dbRouter = require('./routes/db');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 //Indicar que /servicios va a la ruta indicada 
 app.use('/servicios', serviciosRouter);
+app.use('/db', dbRouter);
 
 
 // catch 404 and forward to error handler

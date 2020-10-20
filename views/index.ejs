@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%=title%></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <!--Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
+<head>
+  <title><%=title%></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -14,48 +14,50 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <%- include partials/header %>
-    <br>
-    <div class="row" style="margin-right: 1px;">
-      <!--Carousel-->
-      <div id="carouselExampleControls" class="carousel vert slide col" data-ride="carousel" data-interval="3000">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" width="75%">
-            <div class="carousel-item active">
-                <img class="d-block mx-auto img-fluid rounded" src="../images/la.JPG"alt="Los Ángeles" >
-                <div class="carousel-caption">
-                <h3>Bienvenido a TING</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-            </div>
+</head>
+
+<body>
+  <%- include partials/header %>
+  <br>
+  <div class="row" style="margin-right: 1px;">
+    <!--Carousel-->
+    <div id="carouselExampleControls" class="carousel vert slide col" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" width="75%">
+        <div class="carousel-item active">
+          <img class="d-block mx-auto img-fluid rounded" src="../images/la.JPG" alt="Los Ángeles">
+          <div class="carousel-caption">
+            <h3>Bienvenido a TING</h3>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-            <div class="carousel-item">
-                <img class="d-block mx-auto img-fluid rounded" src="../images/Paris.JPG" alt="Francia" >
-                <div class="carousel-caption">
-                  <h3>Bienvenido a TING</h3>
-                  <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block mx-auto img-fluid rounded" src="../images/Venecia.JPG" alt="Italia" >
-                <div class="carousel-caption">
-                  <h3>Bienvenido a TING</h3>
-                  <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
         </div>
-    </div>
-
-    </div>
-
-    </div>
-        <!--Footer-->
-        <%- include partials/footer %>
+        <div class="carousel-item">
+          <img class="d-block mx-auto img-fluid rounded" src="../images/Paris.JPG" alt="Francia">
+          <div class="carousel-caption">
+            <h3>Bienvenido a TING</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block mx-auto img-fluid rounded" src="../images/Venecia.JPG" alt="Italia">
+          <div class="carousel-caption">
+            <h3>Bienvenido a TING</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
       </div>
-  </body>
+    </div>
+
+  </div>
+
+  </div>
+  <!--Footer-->
+  <%- include partials/footer %>
+  </div>
+</body>
+
 </html>
