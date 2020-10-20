@@ -68,5 +68,7 @@
 .table thead th, .table th, td{
   border: solid 5px var(--darksienna);
   background: var(--peachpuff);
+  width: 50%;
+  text-align: center;
   border-radius: 5px;
 }
