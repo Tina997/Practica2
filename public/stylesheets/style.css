@@ -65,6 +65,7 @@
 .card6{
   background-color: var(--beaublue);
 }
-td{
- align-content: center;
+th, td{
+  border: solid 5px var(--darksienna);
+  border-radius: 5px;
 }
