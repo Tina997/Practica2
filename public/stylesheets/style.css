@@ -65,7 +65,8 @@
 .card6{
   background-color: var(--beaublue);
 }
-th, td{
+.head, td{
   border: solid 5px var(--darksienna);
+  background: var(--lightpink);
   border-radius: 5px;
 }
