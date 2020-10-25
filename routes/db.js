@@ -13,7 +13,7 @@ var router = express.Router();
 router.get('/', async (req, res) => {
     try {
       const client = await pool.connect();
-      const result = await client.query('SELECT * FROM lab2_table');
+      const result = await client.query('SELECT * FROM tabla_mejoras');
       const results = { 'results': (result) ? result.rows : null};
       res.render('db', results );
       client.release();
