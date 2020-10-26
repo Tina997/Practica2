@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/insertMejora', async (req, res) => {
-            res.redirect('../db');
+    res.redirect('../db');
     var usuario = req.body.usuario;
     var mejora = req.body.mejora;
     var hoy = new Date();
