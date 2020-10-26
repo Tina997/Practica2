@@ -16,6 +16,7 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/insertMejora', async (req, res) => {
+            res.redirect('../db');
     var usuario = req.body.usuario;
     var mejora = req.body.mejora;
     var hoy = new Date();
@@ -28,7 +29,7 @@ router.post('/insertMejora', async (req, res) => {
             const result = await pool.query("INSERT INTO tabla_mejoras values ('" + usuario + "', '" + mejora + "', '" + fecha + "')");
             res.status(204).send();
             client.release();
-            res.redirect('../db');
+
         } catch (err) {
             console.error(err);
             res.send('Error ' + err);
