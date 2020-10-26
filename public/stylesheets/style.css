@@ -75,3 +75,6 @@
 .form-control{
   border: solid 5px var(--darksienna);
 }
+.row{
+  width: 99%;
+}

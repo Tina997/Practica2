@@ -22,31 +22,30 @@
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-    <form class="col justify-content-center user-form" method="POST" action="/mejoras/insertMejora" enctype="application/x-www-form-urlencoded">
+      <form class="col justify-content-center user-form" method="POST" action="/mejoras/insertMejora"
+        enctype="application/x-www-form-urlencoded">
         <div class="form-group">
-            <label for="name">Usuario</label>
-            <input type="text" class="form-control" id="usuario" name="usuario"
-                placeholder="Escriba su nombre de usuario">
+          <label for="name">Usuario</label>
+          <input type="text" class="form-control" id="usuario" name="usuario"
+            placeholder="Escriba su nombre de usuario">
         </div>
         <div class="form-group">
-            <label for="mejora">Mejora propuesta</label>
-            <textarea class="form-control" rows="10" cols="30">
-            </textarea>
+          <label for="mejora">Mejora propuesta</label>
+          <textarea class="form-control" id="mejora" name="mejora" rows="10" cols="30" placeholder="Escriba su propuesta"></textarea>
         </div>
         <div class="row">
-          <div class="col-sm-4"></div>
-        <div class="form-buttons">
+          <div class="col-sm-2"></div>
+          <div class="form-buttons col-sm-8">
             <button type="submit" id="submit" class="btn btn-register">Enviar propuesta</button>
             <button type="reset" class="btn btn-clear">Limpiar formulario</button>
+          </div>
+          <div class="col-sm-2"></div>
         </div>
-        </div>
-        <div class="col-sm-4"></div>
-      </div>
-    </form>
+      </form>
+    </div>
+
+    <div class="col-sm-3"></div>
   </div>
-  <div class="col-sm-3"></div>
-</div>
-</div>
   <!--Footer-->
   <%- include partials/footer %>
 </body>
