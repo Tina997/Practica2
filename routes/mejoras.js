@@ -23,16 +23,16 @@ router.post('/insertMejora', async (req, res) => {
     var fecha = hoy.getDate() + ' de ' + meses[hoy.getMonth()]  + ' de ' + hoy.getFullYear();
     if (usuario && mejora) {
         try {
+
             const client = await pool.connect();
             const result = await pool.query("INSERT INTO tabla_mejoras values ('" + usuario + "', '" + mejora + "', '" + fecha + "')");
             res.status(204).send();
-            res.redirect ('/servicios');
             client.release();
+            res.redirect('../db');
         } catch (err) {
             console.error(err);
             res.send('Error ' + err);
         }
-
     }
 });
 
