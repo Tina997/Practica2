@@ -26,7 +26,7 @@ router.post('/insertMejora', async (req, res) => {
             const client = await pool.connect();
             const result = await pool.query("INSERT INTO tabla_mejoras values ('" + usuario + "', '" + mejora + "', '" + fecha + "')");
             res.status(204).send();
-            res.redirect ('/db');
+            res.redirect ('/servicios');
             client.release();
         } catch (err) {
             console.error(err);
