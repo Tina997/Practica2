@@ -12,7 +12,7 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/', async (req, res) => {
-    res.render('mejoras', { title: 'mejoras' });
+    res.render('mejoras', { title: 'Mejoras' });
 });
 
 router.post('/insertMejora', async (req, res) => {
@@ -27,6 +27,7 @@ router.post('/insertMejora', async (req, res) => {
             const result = await pool.query("INSERT INTO tabla_mejoras values ('" + usuario + "', '" + mejora + "', '" + fecha + "')");
             res.status(204).send();
             client.release();
+            res.redirect ('/db');
         } catch (err) {
             console.error(err);
             res.send('Error ' + err);

@@ -20,6 +20,8 @@
   <%- include partials/header %>
   <br>
   <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
     <form class="col justify-content-center user-form" method="POST" action="/mejoras/insertMejora" enctype="application/x-www-form-urlencoded">
         <div class="form-group">
             <label for="name">Usuario</label>
@@ -28,14 +30,17 @@
         </div>
         <div class="form-group">
             <label for="mejora">Mejora propuesta</label>
-            <input type="texto" class="form-control" id="mejora" name="mejora"
+            <textarea type="text" class="form-control" id="mejora" name="mejora"
                 placeholder="Escriba su propuesta">
         </div>
         <div class="form-buttons">
-            <button type="submit" id="submit" class="btn btn-register">Registrar</button>
+            <button type="submit" id="submit" class="btn btn-register">Enviar propuesta</button>
             <button type="reset" class="btn btn-clear">Limpiar formulario</button>
         </div>
     </form>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
 </div>
   <!--Footer-->
   <%- include partials/footer %>

@@ -18,26 +18,10 @@
 
 <body>
     <%- include partials/header %>
-    <br><br>
+    <br>
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-           <!-- <table class="table">
-                <thead>
-                    <tr>
-                        <th>Identificador</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% results.forEach(function(r){ %>
-                    <tr>
-                        <td><%= r.id %></td>
-                        <td><%=r.valor%></td>
-                    </tr>
-                    <%});%>
-                </tbody>
-            </table>-->
             <%results.forEach(function(r){%>
                 <div class="media border p-3">
                     <div class="media-body">
