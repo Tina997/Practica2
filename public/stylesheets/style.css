@@ -33,6 +33,7 @@
   color: var(--white);
   margin-inline-start: 15px;
   padding: 5px 15px 5px 15px;
+  margin: 5px;
 }
 
 .footer{
